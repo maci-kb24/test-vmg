@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    height:100%;
+    box-sizing: border-box; 
+    font-size:100%;
+}
+body {
+    min-height:100%;
+    margin:0;
+    font-size: 100%;
+    background-color: #C7E834;
+    font-family: 'Inter', sans-serif;
+    color: rgb(44, 51, 69);
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width:10%;
+}
+.wrapper {
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+}
+.jackspots img {
+    display: block;
+    height: auto;
+    width:350px;
+    max-width: 100%;
+}
+.promo-casino {
+    align-self: flex-end;
+}
+.promo-casino img {
+    display: block;
+    height: auto;
+    width:350px;
+    max-width: 100%;
+}
+#wheelDiv {
+    height: 400px;
+    width: 400px;
+    margin: auto;
+}
+
+#wheelDiv>svg {
+    height: 100%;
+    width: 100%;
+}
+#spin_button {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    #wheelDiv {
+        height: 350px;
+        width: 350px;
+    }
+    .jackspots, .promo-casino {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    #wheelDiv {
+        height: 300px;
+        width: 300px;
+    }
+}
